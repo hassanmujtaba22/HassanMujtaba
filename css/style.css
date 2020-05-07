@@ -12,9 +12,6 @@
   padding: 5px !important;
   background-color: #0c0c0c;
 }
-h1,h4{
-  font-family: 'Archivo Black', sans-serif;;
-}
 p,pre{
   font-family: 'Yantramanav', sans-serif;;
 }
@@ -79,7 +76,7 @@ p,pre{
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 85vh;
+  height: 85vh;
   overflow: hidden;
 }
 #text{
@@ -107,14 +104,15 @@ p,pre{
 
 /* about me start  */
 .about-me{
-  height: 90vh;
-  padding-top: 10vh;
+  height: max-content;
+  padding-top: 5%;
   padding-bottom: 100px;
   justify-content: center;
   align-items: center;
 }
 .about-me h6{
-  font-size: 3vw;
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 25px;
   font-weight: 900;
   letter-spacing: 5px;
   color: gray;
@@ -123,27 +121,29 @@ p,pre{
 
 }
 .about-me h1{
+  font-family: 'Archivo Black', sans-serif;
   margin: 0 !important;
-  font-size: 5vw;
+  font-size: 60px;
   letter-spacing: 3px;
 }
 .about-me h4{
+  font-family: 'Archivo Black', sans-serif;
   margin: 0 !important;
-  font-size: 3vw;
+  font-size: 30px;
   color: gray;
 }
 .about-me p{
+  font-family: 'Yantramanav', sans-serif;
   margin: 0 !important;
-  font-size: 2vw;
+  font-size: 20px;
   color: gray;
   letter-spacing: 0;
   font-weight: normal;
-  line-height: 1;
   padding-top: 2vh;
 }
 .about-me .social-media-icons i{
   margin: 0 !important;
-  font-size: 2vw;
+  font-size: 30px;
   padding: 2vh 3vw 2vh 0;
   cursor: pointer;
 }
@@ -166,18 +166,20 @@ p,pre{
   color: red;
 }
 .about-me .aboutme-btn1{
-  font-size: 1.5vw;
+  font-size: 20px;
   font-weight: bold !important;
   transition: ease 1s !important;
   border-color: rgb(21, 0, 250) !important;
   margin-right: 30px;
+  margin-top: 50px;
 }
 .about-me .aboutme-btn2{
-  font-size: 1.5vw;
+  font-size: 20px;
   font-weight: bold !important;
   transition: ease 1s !important;
   border-color: rgb(21, 0, 250) !important;
   margin-right: 30px;
+  margin-top: 50px;
 }
 .aboutme-btn1{
   background-color: rgb(21, 0, 250) !important;
@@ -198,4 +200,48 @@ p,pre{
 .profile-img img{
   width: 100%;
 }
+/* about me end  */
+
+/* skill start  */
+.skill{
+  height: max-content;
+  padding-top: 5%;
+  padding-bottom: 100px;
+  justify-content: center;
+  align-items: center;
+}
+.skill h1{
+  font-family: 'Archivo Black', sans-serif;
+  margin: 0 !important;
+  font-size: 60px;
+  letter-spacing: 3px;
+}
+.skill p{
+  font-family: 'Yantramanav', sans-serif;
+  margin: 0 !important;
+  font-size: 20px;
+  color: gray;
+  letter-spacing: 0;
+  font-weight: normal;
+  padding-top: 2vh;
+}
+.skill-icons{
+  padding-top: 20px;
+}
+.skill-icons img{
+  width: 100px;
+}
+.skill-icons img:hover{
+  filter: drop-shadow(8px 8px 10px gray);
+  transform: scale(1.2);
+  z-index: 1;
+}
+.skill ul{
+  list-style-type: disc;
+}
+.skill ul li{
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 20px;
+}
+/* skill end  */
 
