@@ -9,7 +9,8 @@
 }
 .main{
   width: 100% !important;
-  background-color: #232323;
+  padding: 5px !important;
+  background-color: #0c0c0c;
 }
 h1,h4{
   font-family: 'Archivo Black', sans-serif;;
@@ -112,29 +113,38 @@ p,pre{
   justify-content: center;
   align-items: center;
 }
-.about-me p{
-  font-size: 20px;
+.about-me h6{
+  font-size: 3vw;
   font-weight: 900;
   letter-spacing: 5px;
   color: gray;
+  margin: 0 !important;
+  line-height: 1;
+
 }
 .about-me h1{
-  font-size: 50px;
+  margin: 0 !important;
+  font-size: 5vw;
   letter-spacing: 3px;
 }
 .about-me h4{
-  font-size: 20px;
+  margin: 0 !important;
+  font-size: 3vw;
   color: gray;
 }
-.about-me .intro{
-  font-size: 20px;
+.about-me p{
+  margin: 0 !important;
+  font-size: 2vw;
   color: gray;
   letter-spacing: 0;
   font-weight: normal;
+  line-height: 1;
+  padding-top: 2vh;
 }
 .about-me .social-media-icons i{
-  font-size: 30px;
-  padding: 10px;
+  margin: 0 !important;
+  font-size: 2vw;
+  padding: 2vh 3vw 2vh 0;
   cursor: pointer;
 }
 .social-media-icons a:first-child i{
@@ -155,7 +165,15 @@ p,pre{
 .social-media-icons a:nth-child(6) i{
   color: red;
 }
-.about-me .aboutme-btn1, .aboutme-btn2{
+.about-me .aboutme-btn1{
+  font-size: 1.5vw;
+  font-weight: bold !important;
+  transition: ease 1s !important;
+  border-color: rgb(21, 0, 250) !important;
+  margin-right: 30px;
+}
+.about-me .aboutme-btn2{
+  font-size: 1.5vw;
   font-weight: bold !important;
   transition: ease 1s !important;
   border-color: rgb(21, 0, 250) !important;
@@ -181,68 +199,3 @@ p,pre{
   width: 100%;
 }
 
-@media (max-width: 600px){
-  .about-me{
-    height: 90vh;
-    padding-top: 10vh;
-    padding-bottom: 100px;
-    justify-content: center;
-    align-items: center;
-  }
-  .about-me p{
-    font-size: 10px;
-    font-weight: 900;
-    padding: 0;
-    margin: 0;
-    letter-spacing: 5px;
-    color: gray;
-  }
-  .about-me h1{
-    font-size: 30px;
-    letter-spacing: 0px;
-  }
-  .about-me h4{
-    font-size: 10px;
-    color: gray;
-  }
-  .about-me .intro{
-    font-size: 10px;
-    color: gray;
-    letter-spacing: 0;
-    font-weight: normal;
-    margin: 0;
-  }
-  .about-me .social-media-icons i{
-    font-size: 20px;
-    padding: 5px;
-    cursor: pointer;
-  }
-  .about-me a{
-    font-size: 10px;
-  }
-  .about-me .aboutme-btn1, .aboutme-btn2{
-    font-weight: bold !important;
-    transition: ease 1s !important;
-    border-color: rgb(21, 0, 250) !important;
-    margin-right: 0px;
-  }
-  .aboutme-btn1{
-    background-color: rgb(21, 0, 250) !important;
-    color: white !important;
-  }
-  .about-me .aboutme-btn1:hover{
-    background-color: transparent !important;
-    color: rgb(21, 0, 250) !important;
-  }
-  .aboutme-btn2{
-    background-color: transparent !important;
-    color: rgb(21, 0, 250) !important;
-  }
-  .about-me .aboutme-btn2:hover{
-    background-color: rgb(21, 0, 250) !important;
-    color: white !important;
-  }
-  .profile-img img{
-    width: 100%;
-  }
-}
