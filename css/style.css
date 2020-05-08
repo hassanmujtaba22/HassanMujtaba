@@ -8,7 +8,7 @@
   color: white;
 }
 .main{
-  width: 100% !important;
+  width: 100% !important; 
   padding: 5px !important;
   background-color: #0c0c0c;
 }
@@ -16,8 +16,9 @@ p,pre{
   font-family: 'Yantramanav', sans-serif;;
 }
 .box{
-  /* height: max-content; */
-  height: 100vh;
+  height: max-content;
+  transform: translateY(20px);
+  transition: 0.5s all ease-in-out;
   padding-top: 5%;
   padding-bottom: 100px;
   justify-content: center;
@@ -42,7 +43,7 @@ p,pre{
 }
 @media (max-width: 450px){
  .box h1{
-   font-size: 30px;
+   font-size: 30px !important;
  }             
 }
 /* basic styling  end*/
@@ -341,9 +342,6 @@ p,pre{
 /* project end  */
 
 /* services start  */
-.services-card{
-  /* margin: 2px; */
-}
 .services-card .card{
   margin: 2vh auto !important;
   width: 100% !important;
@@ -371,7 +369,11 @@ p,pre{
 .services-card h5{
   font-weight: bolder;
 }
-
+@media only screen and (max-width: 1000px){
+  .services-card .card{
+    width: 90% !important;
+  }
+}
 /* services end  */
 
 /* contact start  */
