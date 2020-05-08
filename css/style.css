@@ -58,12 +58,15 @@ p,pre{
 .navbar{
   height: 15vh;
 }
+.nav-links{
+  text-align: center;
+}
 .nav-link{
   color: white !important;
   font-family: 'Yantramanav', sans-serif;
   font-weight: bold;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 2vw;
+  margin-right: 2vw;
   text-align: center;
 }
 .nav-link::after{
@@ -79,12 +82,17 @@ p,pre{
   width: 100%;
   color: rgb(21, 0, 250);
 }
+@media only screen and (max-width: 1000px){
+.nav-link:hover::after{
+  width: fit-content;
+}
+}
 .nav-btn{
-  width: 100%;
+  width: fit-content;
   border-color: rgb(21, 0, 250) !important;
   color: rgb(21, 0, 250) !important;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 2vw;
+  margin-right: 2vw;
   font-weight: bold !important;
   transition: ease 1s !important;
 }
@@ -92,9 +100,15 @@ p,pre{
   background-color: rgb(21, 0, 250) !important;
   color: white !important;
 }
-@media (max-width: 1000px){
+@media only screen and (max-width: 1000px){
   .navbar{
     z-index: 1;
+    width: 90% !important;
+    margin: 0 auto !important;
+  }
+  .nav-link{
+    margin: 0;
+
   }
 }
 /* nav bar styling end  */
